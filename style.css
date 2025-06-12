@@ -99,41 +99,6 @@ button {
 }
 /* -------------------------- */
 
-@media screen and (max-width: 562px) {
-    body {
-        flex-direction: column;
-        background-color: lightblue;
-    }
-
-    button {
-        width: 100%;
-        height: auto;
-    }
-
-    /* -------------------------- */
-
-    #mensagem {
-        width: 90vw;
-        height: auto;
-        margin-top: 2rem;
-    }
-    /* -------------------------- */
-
-    #imagens {
-        max-height: 15vh;
-        padding: 0rem;
-    }
-
-    #foto {
-        max-width: 100%;
-        max-height: auto;
-    }
-}
-
-/* -------------------------- */
-/* ------ tela de obgd ------ */
-/* -------------------------- */
-
 body {
     /* font-family: Arial, sans-serif; */
     display: flex;
@@ -188,9 +153,9 @@ body {
     flex-direction: column;
 }
 /* # =========================
-# Responsividade para iPhone 16 (até 440px)
+# Responsividade para iPhone 16 (até 450px)
 # ========================= */
-@media (max-width: 440px) {
+@media (max-width: 450px) {
     body {
         font-size: 0.95rem;
         flex-direction: column;
