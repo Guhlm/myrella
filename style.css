@@ -1,0 +1,374 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+    font-family: 'Play', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin: 1rem;
+    align-items: center;
+    height: 3vh;
+    width: 2vw;
+    border-radius: 5px;
+    color: white;
+    background-color: #264653;
+    border-style: hidden;
+    cursor: pointer;
+}
+#corpo-texto-principal {
+    justify-content: space-between;
+    flex-direction: row;
+}
+/* -------------------------- */
+#mensagem {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 3rem;
+    width: 60vw;
+    height: 50vh;
+    padding: 1rem;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+#msg-titulo {
+    color: #556b2f;
+    padding: 1rem;
+    font-size: 2rem;
+}
+/* -------------------------- */
+#corpo-texto {
+    display: flex;
+    color: #6a0572;
+    justify-content: center;
+    width: 40vw;
+}
+#msg-corpo {
+    text-align: center;
+    font-size: 0.8rem;
+}
+#msg-corpo-secundario{
+    padding: 1rem;
+}
+/* -------------------------- */
+#msg-assinatura {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: baseline;
+    color: #264653;
+}
+#assinatura {
+    font-size: 1.3rem;
+}
+#nome-ass {
+    padding: 1rem;
+    font-size: 1rem;
+}
+/* -------------------------- */
+#imagens {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 43vw;
+    height: 75vh;
+    padding: 1rem;
+}
+#foto {
+    max-width: 32vw;
+    max-height: 74vh;
+    border-radius: 25px;
+    transition: opacity 0.5s ease-in-out;
+}
+/* -------------------------- */
+#botao-jogo {
+    /* background-color: ; */
+    margin: 1rem;
+}
+/* -------------------------- */
+
+@media screen and (max-width: 562px) {
+    body {
+        flex-direction: column;
+        background-color: lightblue;
+    }
+
+    button {
+        width: 100%;
+        height: auto;
+    }
+
+    /* -------------------------- */
+
+    #mensagem {
+        width: 90vw;
+        height: auto;
+        margin-top: 2rem;
+    }
+    /* -------------------------- */
+
+    #imagens {
+        max-height: 15vh;
+        padding: 0rem;
+    }
+
+    #foto {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+/* -------------------------- */
+/* ------ tela de obgd ------ */
+/* -------------------------- */
+
+body {
+    /* font-family: Arial, sans-serif; */
+    display: flex;
+    text-align: center;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+/* Centraliza o conteúdo da div com id corpo-texto-secundario */
+#corpo-texto-secundario {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+/* # =========================
+# Responsividade para iPhone 16 (até 440px)
+# ========================= */
+@media (max-width: 440px) {
+    body {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin: 0.5rem 0;
+    }
+
+    p, h4, h5, h6 {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 1rem;
+    }
+    #titulo{
+        margin-top: 2rem;
+    }
+
+    #carrossel{
+        margin-top: 6rem;
+        height: 17rem;
+        width: 12rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        align-content: center;
+    }
+
+    #foto{
+        height: 17rem;
+        width: 12rem;
+    }
+
+    #botao-anterior{
+        display: flex;
+        justify-content: center;
+        width: 1vw;
+        height: 1vh;
+    }
+
+    #botao-proximo{
+        display: flex;
+        justify-content: center;
+        width: 1vw;
+        height: 1vh;
+    }
+
+    #mensagem {
+        width: 90vw;
+        height: 40vh;
+        padding: 1rem;
+    }
+
+    #corpo-texto-principal{
+        width: 91%;
+        margin-top: 9rem;
+    }
+
+    #corpo-texto,
+    #corpo-texto-secundario {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #msg-corpo,
+    #msg-corpo-secundario {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    #titulo-secundario{
+        margin-top: 2rem;
+    }
+
+    #mgs-assinatura{
+        height: 0.1vh;
+    }
+
+    #ssinatura{
+        height: 0.1vh;
+    }
+
+    #nome-ass{
+        height: 0.1vh;
+    }
+
+    #imagens {
+        flex-direction: row;
+        width: 100%;
+        height: 17vh;
+        padding: 0.5rem;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(2, 45%);
+        grid-gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    button,
+    #botao-jogo a {
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 1rem;
+        padding: 0.6em 1.2em;
+        margin: 0.3rem 0;
+    }
+    #botao-voltar{
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 1rem;
+        padding: 0.6em 1.2em;
+        margin-top: 3rem;
+    }
+
+    #text-asd{
+        margin-top: 5rem;
+    }
+/* ========================================== */
+/* ============= jogo da memoria ============ */
+/* ========================================== */
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 7.5px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 5px;
+  }
+  
+  .card {
+    width: 75px;
+    height: 75px;
+    background-color: #f4f1de;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card.flipped {
+    background-color: #e07a5f;
+    cursor: default;
+    box-shadow: 0 4px 8px rgba(224, 122, 95, 0.7);
+  }
+  
+  .card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .card.flipped img {
+    display: block;
+  }
+  
+}
